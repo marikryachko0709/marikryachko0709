@@ -1,0 +1,17 @@
+class Fraction:
+
+    def __init__(self, top=0, bottom=0):
+        self.num = top
+        self.den = bottom
+
+    def __str__(self):
+        return str(self.num) + "/" + str(self.den)
+
+    def input(self):
+        print('Числитель')
+        self.num = input()
+        math_functions.str_to_int(self.num)
+        print('Знаменатель')
+        self.den = input()
+        math_functions.str_to_int(self.den)
+        print(self.__str__())
